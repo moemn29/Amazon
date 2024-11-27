@@ -24,4 +24,9 @@ public class test_non_rigistered_user {
 
         Assert.assertEquals(actions.get_title(),"تسجيل الدخول", "passed");
     }
+
+    @AfterClass
+    public void end_case() {
+        driver.quit();
+    }
 }
